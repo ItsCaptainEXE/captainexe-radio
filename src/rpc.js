@@ -5,15 +5,15 @@ export const discord = new DiscordSDK(import.meta.env.VITE_DISCORD_CLIENT_ID);
 export async function initRPC() {
   try {
     await discord.ready();
-  } catch (e) {
-    console.warn("Discord SDK not available (browser mode).");
+  } catch {
+    console.warn("RPC unavailable outside Discord.");
   }
 }
 
-export function setRPC(trackName) {
+export function setRPC(details) {
   try {
     discord.setActivity({
-      details: `Listening to ${trackName}`,
+      details,
       state: "By CaptainEXE",
       assets: {
         large_image: "captainexe_radio_logo",
@@ -21,12 +21,16 @@ export function setRPC(trackName) {
       },
       buttons: [
         {
-          label: "Join Discord",
+          label: "Join VC",
+          url: "https://discord.com/channels/@me"
+        },
+        {
+          label: "Dev Discord",
           url: "https://captainexe.vercel.app/discord"
         }
       ]
     });
-  } catch (e) {
+  } catch {
     console.warn("RPC unavailable outside Discord.");
   }
 }
