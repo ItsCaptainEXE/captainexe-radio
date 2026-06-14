@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/captainexe-radio/",
+  base: "/", // IMPORTANT for Vercel
   build: {
     outDir: "dist"
   }
