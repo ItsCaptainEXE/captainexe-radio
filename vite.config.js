@@ -1,7 +1,8 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/", // IMPORTANT for Vercel
+  root: ".",        // <-- IMPORTANT
+  base: "/",        // <-- IMPORTANT
   build: {
     outDir: "dist"
   }
