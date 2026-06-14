@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>CaptainEXE Radio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <div id="app">
+
+    <div id="header">
+      <h1>CaptainEXE Radio</h1>
+      <p id="status">Loading...</p>
+    </div>
+
+    <div id="player-container">
+      <iframe
+        id="player"
+        src=""
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div id="controls">
+      <button onclick="playTrack(0)">Embers</button>
+      <button onclick="playTrack(1)">Afterglow</button>
+      <button onclick="playLive()">Live</button>
+    </div>
+
+    <div id="now-playing">
+      <h2 id="np-title">Now Playing:</h2>
+      <p id="np-info">Nothing yet</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
