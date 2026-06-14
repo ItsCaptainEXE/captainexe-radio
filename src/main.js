@@ -1,8 +1,6 @@
-import { initRPC } from "./rpc.js";
-import { playTrack } from "./script.js";
-
-window.playTrack = playTrack;
+import { initRPC, setRPC } from "./rpc.js";
 
 await initRPC();
 
-playTrack(0);
+// Set your RPC immediately when the Activity loads
+setRPC("Chilling in CaptainEXE Radio");
