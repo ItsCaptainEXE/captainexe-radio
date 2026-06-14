@@ -23,3 +23,14 @@ export function playTrack(index) {
   npInfo.textContent = `${track.title} — CaptainEXE`;
   setRPC(track.title);
 }
+export function play() {
+  player.muted = false; // unmute when user clicks play
+  player.play();
+}
+
+export function pause() {
+  player.pause();
+}
+
+window.play = play;
+window.pause = pause;
