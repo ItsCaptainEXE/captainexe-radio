@@ -2,36 +2,12 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>CaptainEXE Radio</title>
+  <title>CaptainEXE RPC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/src/style.css" />
 </head>
 
-<body>
-
-  <div id="app">
-
-    <div id="header">
-      <h1>CaptainEXE Radio</h1>
-      <p id="status">Loading…</p>
-    </div>
-
-    <div id="player-container">
-      <video id="player" autoplay muted></video>
-    </div>
-
-    <div id="controls">
-      <button onclick="window.playTrack(0)">Embers</button>
-      <button onclick="window.playTrack(1)">Afterglow</button>
-      <button onclick="window.play()">Play</button>
-      <button onclick="window.pause()">Pause</button>
-    </div>
-
-    <div id="now-playing">
-      <p id="np-info">Nothing playing</p>
-    </div>
-
-  </div>
+<body style="background:#000; color:#fff; font-family:Arial; display:flex; justify-content:center; align-items:center; height:100vh;">
+  <h1>CaptainEXE RPC Active</h1>
 
   <script type="module" src="/src/main.js"></script>
 </body>
