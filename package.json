@@ -1,0 +1,15 @@
+{
+  "name": "captainexe-rpc",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@discord/embedded-app-sdk": "latest"
+  },
+  "devDependencies": {
+    "vite": "latest"
+  }
+}
