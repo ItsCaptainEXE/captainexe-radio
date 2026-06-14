@@ -22,7 +22,7 @@ async function playLive() {
     const res = await fetch("https://www.youtube.com/@ItsCaptainEXE/live");
     const html = await res.text();
 
-    // Find the actual live video ID
+    // Extract real live video ID
     const match = html.match(/"videoId":"(.*?)"/);
 
     if (match && match[1]) {
@@ -35,7 +35,6 @@ async function playLive() {
       return;
     }
 
-    // If no live video found
     status.textContent = "Not Live — Playing Playlist";
     playTrack(0);
 
